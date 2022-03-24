@@ -1,11 +1,6 @@
 #
-# Autostart
-#
-
-#
 # Wm independent hotkeys
 #
-
 
 # terminal emulator
 super + Return
@@ -15,7 +10,7 @@ super + Return
 super + space
 	rofi -show drun
 
-# make sxhkd reload its configuration files:
+# reload sxhkd
 super + Escape
 	pkill -USR1 -x sxhkd
 

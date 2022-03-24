@@ -3,11 +3,18 @@
 # Fix cursor
 # xsetroot -cursor_name left ptr
 
+#
+# Autostart
+#
+
 pgrep -x sxhkd > /dev/null || sxhkd &
+picom &
+feh --bg-scale ~/Pictures/black5_unicat.png &
+polybar &
 
 # Monitor Rules
-bspc monitor HDMI-0 I II III IV V 				# Workspaces for external monitor
-bspc monitor eDP-1-1 VI VII VIII IX X			# Workspaces for internal monitor
+bspc monitor HDMI-0 -d I II III IV V 				# Workspaces for external monitor
+bspc monitor eDP-1-1 -d VI VII VIII IX X			# Workspaces for internal monitor
 
 bspc config border_width         2
 bspc config window_gap           5
