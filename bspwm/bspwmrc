@@ -10,11 +10,11 @@ bspc monitor HDMI-0 I II III IV V 				# Workspaces for external monitor
 bspc monitor eDP-1-1 VI VII VIII IX X			# Workspaces for internal monitor
 
 bspc config border_width         2
-bspc config window_gap          5
+bspc config window_gap           5
 
 bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 # Application Rules
-bspc rule -a Spotify desktop='^2'
+# bspc rule -a Spotify desktop='^2'
