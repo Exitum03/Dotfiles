@@ -1,20 +1,28 @@
+# Padding
 # Font
 font:
   normal:
-    family: jetbrains mono
+    family: JetBrainsMono Nerd Font
     style: Regular
 
   bold:
-    family: jetbrains mono
+    family: JetBrainsMono Nerd Font
     style: Bold
 
   italic:
-    family: jetbrains mono
+    family: JetBrainsMono Nerd Font
     style: italic
 
   bold_italic:
-    family: jetbrains mono
+    family: JetBrainsMono Nerd Font
     style: Bold Italic
+
+# Padding
+window:
+  padding:
+    x: 20
+    y: 15
+  dynamic_padding: false
 
 # Catppuccin!
 colors:

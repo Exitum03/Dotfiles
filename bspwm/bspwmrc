@@ -1,19 +1,20 @@
 #! /bin/sh
 
-# Fix cursor
-# xsetroot -cursor_name left ptr
-
 #
 # Autostart
 #
 
+# Fix cursor
+xsetroot -cursor_name left ptr
 pgrep -x sxhkd > /dev/null || sxhkd &
-picom &
+# programs
+picom -fb --experimental-backends --backend glx &
 feh --bg-scale ~/Pictures/black5_unicat.png &
 polybar &
 
+
 # Monitor Rules
-bspc monitor HDMI-0 -d I II III IV V 				# Workspaces for external monitor
+bspc monitor HDMI-0 -d I II III IV V 					# Workspaces for external monitor
 bspc monitor eDP-1-1 -d VI VII VIII IX X			# Workspaces for internal monitor
 
 bspc config border_width         2
