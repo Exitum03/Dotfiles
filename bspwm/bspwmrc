@@ -1,28 +1,43 @@
 #! /bin/sh
 
-#
-# Autostart
-#
-
 # Fix cursor
-xsetroot -cursor_name left ptr
+xsetroot -cursor_name left ptr &
+
+#Keybinds
 pgrep -x sxhkd > /dev/null || sxhkd &
-# programs
+
+# compositor
 picom -fb --experimental-backends --backend glx &
-feh --bg-scale ~/Pictures/black5_unicat.png &
+
+# wallpaper
+feh --bg-scale ~/.config/bspwm/wallpaper.png &
+
+# status bar
 polybar &
 
-
-# Monitor Rules
-bspc monitor HDMI-0 -d I II III IV V 					# Workspaces for external monitor
+# monitor Rules
+bspc monitor HDMI-0 -d I II III IV V 				# Workspaces for external monitor
 bspc monitor eDP-1-1 -d VI VII VIII IX X			# Workspaces for internal monitor
+
+#
+# GAPS
+#
 
 bspc config border_width         2
 bspc config window_gap           5
-
 bspc config split_ratio          0.5
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+bspc config borderless_monocle   false
+bspc config gapless_monocle      false
 
+#
 # Application Rules
+#
+
 # bspc rule -a Spotify desktop='^2'
+
+#
+# Colors
+#
+
+bspc config normal_border_color 		"#575268"
+bspc config focused_border_color		"#C9CBFF"
