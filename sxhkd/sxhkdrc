@@ -31,6 +31,18 @@ super + {_,shift + } c
 	bspc node -{c,k}
 
 #
+# Screenshot
+#
+
+# save selected area to clipboard
+super + shift + s
+  flameshot gui -c
+
+# save screen shot 
+super + shift + a
+	flameshot full -p ~/Pictures/Screenshots
+
+#
 # Window states
 #
 
