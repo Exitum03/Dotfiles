@@ -6,14 +6,17 @@ xsetroot -cursor_name catppuccin lavender &
 # Keybinds 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
+# polkit
+# lxsession &
+
+# status bar
+$HOME/.config/polybar/launch.sh &
+
 # compositor
 picom -fb --experimental-backends --backend glx &
 
 # wallpaper
 feh --bg-scale ~/.config/bspwm/wallpaper.png &
-
-# status bar
-polybar &
 
 # monitor Rules
 bspc monitor HDMI-0 -d I II III IV V 				# Workspaces for external monitor
@@ -44,6 +47,5 @@ bspc rule -a Pcmanfm state=floating
 bspc rule -a Zathura state=tiled
 
 # Launch apps on specific workspaces
-bspc rule -a Spotify desktop=^3 state=tiled
-# bspc rule -a Alacritty desktop=^2 state=tiled
+bspc rule -a Spotify desktop=^5 state=tiled
 
