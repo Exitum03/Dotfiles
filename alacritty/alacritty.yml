@@ -2,19 +2,19 @@
 # Font
 font:
   normal:
-    family: jetbrains mono
+    family: jetbrainsmono nerd font
     style: Regular
 
   bold:
-    family: jetbrains mono
+    family: jetbrainsmono nerd font
     style: Bold
 
   italic:
-    family: jetbrains mono
+    family: jetbrainsmono nerd font
     style: italic
 
   bold_italic:
-    family: jetbrains mono
+    family: jetbrainsmono nerd font
     style: Bold Italic
 
 # Padding
