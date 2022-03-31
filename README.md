@@ -1,1 +1,3 @@
 # :penguin: Dotfiles
+## In progress...
+![image1](./pics/img_1.png)
