@@ -54,6 +54,10 @@ super + {_,shift + } c
 super + shift + s
   flameshot gui -c
 
+# save selected area to sreenshots
+super + shift + w
+	flameshot gui -p ~/Pictures/Screenshots
+
 # save screen shot 
 super + shift + a
 	flameshot full -p ~/Pictures/Screenshots
