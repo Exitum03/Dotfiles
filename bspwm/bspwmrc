@@ -47,5 +47,4 @@ bspc rule -a Pcmanfm state=floating
 bspc rule -a Zathura state=tiled
 
 # Launch apps on specific workspaces
-bspc rule -a Spotify desktop=^5 state=tiled
 
