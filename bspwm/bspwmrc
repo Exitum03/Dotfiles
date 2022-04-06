@@ -18,6 +18,9 @@ picom -fb --experimental-backends --backend glx &
 # wallpaper
 feh --bg-scale ~/.config/bspwm/wallpaper.png &
 
+# brightness
+echo 0 > /sys/class/backlight/amdgpu_bl0/brightness
+
 # monitor Rules
 bspc monitor HDMI-0 -d I II III IV V 				# Workspaces for external monitor
 bspc monitor eDP-1-1 -d VI VII VIII IX X			# Workspaces for internal monitor
