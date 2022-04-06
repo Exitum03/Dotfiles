@@ -4,6 +4,6 @@
 killall -q polybar
 
 # Launch bar
-polybar main & disown
+polybar main 2>~/.config/polybar/logfile.txt & 
 
 echo "Bars launched..."
